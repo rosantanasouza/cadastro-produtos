@@ -1,5 +1,5 @@
 # Cadastro de Produtos
 
-Projeto baseado no curso de Typescript da Alura.
+Projeto baseado na formação Typescript da Alura.
 
 Em breve este README será atualizado.
