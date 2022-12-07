@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de produtos</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+
+<body class="container-fluid vh-100" style="background-color: #f8eede">
+
+    <div class="mt-5" id="mensagemView"></div>
+
+    <div class="container-fluid vh-100 d-flex flex-row justify-content-center align-items-center">        
+
+        <form class="container-fluid text-center w-75 border border-dark rounded p-5" id="formulario">
+
+            <div class="row justify-content-center">
+
+                <div class="col-8">
+                    <h1>Cadastro de Produto</h1>
+                </div>
+
+            </div>
+
+            <div class="row flex-column align-items-center gap-3">
+
+                <div class="col-8">
+                    <label>Nome do Produto</label>
+                    <input type="text" class="form-control" id="nomeProduto">
+                </div>
+
+                <div class="col-8">
+                    <label>Categoria</label>
+                    <select class="form-select" id="categoriaProduto">
+                        <option value="">SELECIONE</option>
+                        <option value="LIMPEZA">LIMPEZA</option>
+                        <option value="CEREAIS">CEREAIS</option>
+                        <option value="FRIOS">FRIOS</option>
+                        <option value="BAZAR">BAZAR</option>
+                        <option value="PERFUMARIA">PERFUMARIA</option>
+                        <option value="OUTROS">OUTROS</option>
+                    </select>
+                </div>
+
+                <div class="col-8">
+                    <label>Data de Entrada</label>
+                    <input type="date" class="form-control" id="dataEntrada">
+                </div>
+
+                <div class="col-8">
+                    <label>Quantidade</label>
+                    <input type="number" class="form-control" id="quantidade">
+                </div>
+
+                <div class="col-10">
+                    <button class="btn btn-success w-50" type="submit" id="cadastrar">Cadastrar</button>
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+    
+    <div id="produtosView"></div>
+
+    <script type="module" src="./js/app.js"></script>
+</body>
+
+</html>
