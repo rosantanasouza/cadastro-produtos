@@ -31,8 +31,6 @@ export class ProdutosView extends View<Produtos> {
     } 
     
     private formatarData(data: Date): string {
-        return new Intl.DateTimeFormat().format(data)
-        
-    }
-    
+        return new Intl.DateTimeFormat().format(data)        
+    }    
 }
